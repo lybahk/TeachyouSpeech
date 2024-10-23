@@ -1,0 +1,154 @@
+body {
+  background-color: #f0eaea;
+  color: #555;
+  font-family: 'Allura', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main-header {
+  background-color: #0095a8; /* Updated color */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#navbar {
+  background-color: #213973; /* Updated color */
+  color: #fff;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  color: #fffafa;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+#showcase {
+  font-family: 'Allura', Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #cde0f4, #0095a8); 
+  background-position: center right;
+  height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
+#showcase h1 {
+  font-family:'Allura', cursive;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1.6em;
+  padding-top: 30px;
+}
+
+#main {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#main2 {
+  float: none;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background: #213973; /* Updated color */
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#main-footer {
+  background: #132653; /* Updated color */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.logo {
+  float: right; /* Align logo to the right */
+  width: 100px; /* Adjust width as needed */
+  margin-top: 10px; /* Space from top */
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 20px 0;
+}
+
+#testimonials h2 {
+  text-align: center; /* Center the title */
+  color: #0095a8; /* Match header color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.block {
+  background-color: #008080; /* Teal color for testimonials */
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between boxes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for effect */
+}
+
+.block h4 {
+  margin-top: 0;
+}
+
+.block p {
+  font-size: 16px;
+}
+
+/* Responsive styling for testimonial blocks */
+@media screen and (min-width: 768px) {
+  .block {
+    width: 30%;
+    margin-right: 2%;
+    float: left;
+  }
+
+  .block:nth-child(3n) {
+    margin-right: 0; /* Avoid margin for the last item in each row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block {
+    width: 100%;
+    float: none;
+  }
+}

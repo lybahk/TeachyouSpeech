@@ -1,0 +1,56 @@
+body {
+    font-family: 'Allura', sans-serif; /* Ensure the same font is used */
+    margin: 0;
+    padding: 0;
+    background-color: #f0eaea; /* Light background color */
+}
+
+.container {
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
+h1, h2, h3, h4 {
+    color: #213973; /* Header text color */
+}
+
+nav {
+    background: #0095a8; /* Navbar background color */
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center the navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display items in a line */
+    margin: 0 15px; /* Space out the items */
+}
+
+nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+section {
+    margin: 20px 0; /* Space between sections */
+    padding: 20px; /* Padding inside sections */
+    background: white; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer {
+    text-align: center; /* Center the footer */
+    padding: 20px; /* Add padding */
+    background: #0095a8; /* Footer background color */
+    color: white; /* Footer text color */
+}

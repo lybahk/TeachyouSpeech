@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="teachyouspeech" content="teachyouspeech, public speaking, teachingspeech, teaching, teaching speech, teaching public speaking">
+    <title>Accessory - TeachyouSpeech</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="acessory.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <img src="background2.jpg" alt="Teach You Speech Logo" class="logo">
+            <h1>Welcome to TeachyouSpeech</h1>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="accessory.html">Accessory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <section id="generator">
+        <div class="container">
+            <h2>Topic Generator</h2>
+            <label for="level">Select Level:</label>
+            <select id="level">
+                <option value="1">Level 1: Casual Topics</option>
+                <option value="2">Level 2: MUN Topics</option>
+                <option value="3">Level 3: Debate Topics</option>
+            </select>
+            <button id="generate-btn">Generate Topic</button>
+            <h3 id="topic-output"></h3>
+        </div>
+    </section>
+
+    <section id="timer">
+        <div class="container">
+            <h2>Timer</h2>
+            <label for="timeInput">Set Timer (in seconds):</label>
+            <input type="number" id="timeInput" min="1" placeholder="Enter time in seconds">
+            <button id="start-timer">Start Timer</button>
+            <div id="timer-output"></div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2024 TeachyouSpeech</p>
+    </footer>
+</body>
+
+</html>

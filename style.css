@@ -20,25 +20,30 @@ body {
   padding: 20px;
 }
 
+/* Navigation Styles */
 #navbar {
-  background-color: #213973; /* Updated color */
-  color: #fff;
+    background-color: #213973; /* Navbar background color */
+}
+
+#navbar .container {
+    display: flex; /* Use flexbox for navbar layout */
+    justify-content: center; /* Center navbar items */
 }
 
 #navbar ul {
-  padding: 0;
-  list-style: none;
+    list-style: none;
+    padding: 0;
 }
 
-#navbar li {
-  display: inline;
+#navbar ul li {
+    display: inline; /* Display navbar items in a row */
+    margin: 0 15px; /* Space between items */
 }
 
 #navbar a {
-  color: #fffafa;
-  text-decoration: none;
-  font-size: 18px;
-  padding-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #showcase {
@@ -50,10 +55,8 @@ body {
   text-align: center;
 }
 
-
-
 #showcase h1 {
-  font-family:'Allura', cursive;
+  font-family: 'Allura', cursive;
   color: #ffffff;
   font-size: 50px;
   line-height: 1.6em;
@@ -71,14 +74,6 @@ body {
   float: none;
   width: 100%;
   padding: 0;
-  box-sizing: border-box;
-}
-
-.block {
-  float: left;
-  width: 33.3%;
-  border: 1px solid #ccc;
-  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -108,12 +103,16 @@ body {
 /* Testimonials Section */
 #testimonials {
   padding: 20px 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items evenly */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 
 #testimonials h2 {
   text-align: center; /* Center the title */
   color: #0095a8; /* Match header color */
   margin-bottom: 20px; /* Space below the title */
+  width: 100%; /* Ensure the title takes the full width */
 }
 
 .block {
@@ -123,6 +122,10 @@ body {
   margin-bottom: 20px; /* Space between boxes */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for effect */
+  flex: 1; /* Allow blocks to grow equally */
+  min-width: 250px; /* Minimum width for blocks */
+  height: 200px; /* Fixed height for consistency */
+  margin: 10px; /* Margin for spacing between blocks */
 }
 
 .block h4 {
@@ -134,21 +137,13 @@ body {
 }
 
 /* Responsive styling for testimonial blocks */
-@media screen and (min-width: 768px) {
-  .block {
-    width: 30%;
-    margin-right: 2%;
-    float: left;
-  }
-
-  .block:nth-child(3n) {
-    margin-right: 0; /* Avoid margin for the last item in each row */
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .block {
-    width: 100%;
-    float: none;
+  #testimonials {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
   }
-}
+
+  .block {
+    width: 90%; /* Full width on smaller screens */
+    height: auto; 
+
